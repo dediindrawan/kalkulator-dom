@@ -42,7 +42,6 @@ button {
   width: 50%;
   padding: 0 1.5em 1.5em 1.5em;
   border-radius: 5px;
-  background-color: rgb(37, 40, 46);
   box-shadow: 0 0 0 2px rgba(187, 190, 196, 0.3);
 }
 
@@ -128,9 +127,18 @@ button {
   visibility: visible;
 }
 
-.container .wrapper-input .wrapper-operation .input-group span .input-1 input:focus::-moz-placeholder,
-.container .wrapper-input .wrapper-operation .input-group span .input-1 input:focus::-webkit-input-placeholder,
-.container .wrapper-input .wrapper-operation .input-group span .input-2 input:focus::-moz-placeholder,
+.container .wrapper-input .wrapper-operation .input-group span .input-1 input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.container .wrapper-input .wrapper-operation .input-group span .input-1 input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.container .wrapper-input .wrapper-operation .input-group span .input-2 input:focus::-moz-placeholder {
+  color: transparent;
+}
+
 .container .wrapper-input .wrapper-operation .input-group span .input-2 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
