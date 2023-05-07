@@ -177,8 +177,8 @@ button {
   box-shadow: inset 3px 5px 5px rgba(37, 40, 46, 0.5), inset -3px -5px 5px rgba(37, 40, 46, 0.7);
 }
 
-.container .wrapper-input .wrapper-operation .operator-group button[type='reset']:hover,
-.container .wrapper-input .wrapper-operation button[type='submit']:hover {
+.container .wrapper-input .wrapper-operation .operator-group button[type='submit']:hover,
+.container .wrapper-input .wrapper-operation button[type='reset']:hover {
   box-shadow: inset 3px 5px 5px rgba(37, 40, 46, 0.7), inset -3px -5px 5px rgba(37, 40, 46, 0.5);
 }
 
@@ -199,6 +199,38 @@ button {
 
 /* responsive breakpoint */
 @media screen and (max-width: 600px) {
+  /* container style */
+  .container {
+    width: 90%;
+  }
+
+  /* wrapper input style */
+  .container .wrapper-input {
+    flex-direction: column;
+  }
+
+  /* wrapper operation style */
+  .container .wrapper-input .wrapper-operation {
+    width: 100%;
+  }
+
+  /* input group style */
+  .container .wrapper-input .wrapper-operation .input-group {
+    flex-direction: column;
+  }
+
+  .container .wrapper-input .wrapper-operation .input-group .block-operator {
+    width: 100%;
+  }
+
+  /* display result style */
+  .container .wrapper-input .display-result {
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 550px and up) */
+@media screen and (min-device-width: 550px) and (max-device-width: 992px) and (orientation: landscape) {
   /* container style */
   .container {
     width: 90%;
