@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Dom</title>
+    <!-- connecting to css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container">
+        <h3>kalkulator sederhana</h3>
+        <p>Cari tahu hasil nilai dari angka yang kamu hitung sekarang!!</p>
+        <!-- wrapper input start -->
+        <div class="wrapper-input">
+            <!-- wrapper operation -->
+            <div class="wrapper-operation">
+                <form class="input-group">
+                    <span>
+                        <div class="input-1">
+                            <input class="input-number-1" type="number" placeholder="Masukkan angka" autofocus>
+                            <small class="tooltip">Masukkan angka</small>
+                        </div>
+                    </span>
+                    <span class="block-operator"></span>
+                    <span>
+                        <div class="input-2">
+                            <input class="input-number-2" type="number" placeholder="Masukkan angka" autofocus>
+                            <small class="tooltip">Masukkan angka</small>
+                        </div>
+                    </span>
+                </form>
+                <!-- operator group -->
+                <div class="operator-group">
+                    <button type="submit" class="btn-operator" title="Penjumlahan">+</button>
+                    <button type="submit" class="btn-operator" title="Pengurangan">-</button>
+                    <button type="submit" class="btn-operator" title="Perkalian">x</button>
+                    <button type="submit" class="btn-operator" title="Pembagian">/</button>
+                </div>
+                <!-- button reset -->
+                <button class="reset-content" type="reset">RESET</button>
+            </div>
+            <!-- display result -->
+            <div class="display-result">Nilai yang kamu hitung akan tampil disini.</div>
+        </div>
+        <!-- wrapper input end -->
+    </div>
+    <!-- container end -->
+
+    <!-- connecting to javascript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
