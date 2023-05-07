@@ -190,6 +190,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   text-align: center;
   border-radius: 5px;
   overflow: auto;
@@ -238,12 +239,12 @@ button {
 
   /* wrapper input style */
   .container .wrapper-input {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   /* wrapper operation style */
   .container .wrapper-input .wrapper-operation {
-    width: 100%;
+    width: 50%;
   }
 
   /* input group style */
@@ -257,6 +258,7 @@ button {
 
   /* display result style */
   .container .wrapper-input .display-result {
-    width: 100%;
+    width: 50%;
+    height: 280px;
   }
 }
